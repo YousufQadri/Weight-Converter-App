@@ -8,9 +8,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Weight Converter App</title>
+    <style>
+      body {
+        margin-top: 80px;
+        background-color: #eee;
+      }
+      /* #output {
+        display: none;
+      } */
+    </style>
   </head>
+
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card light-blue darken-1 center-align">
+            <div class="card-content white-text">
+              <h2 class="black-text text-darken-1" style="font-weight: 500;">
+                Weight Converter App
+              </h2>
+              <p class="flow-text">
+                Convert kg into the following
+              </p>
+            </div>
+            <div class="card-action">
+              <div class="input-field">
+                <i class="material-icons prefix">add</i>
+                <input id="kgInput" type="number" class="custom" />
+              </div>
+            </div>
+            <div id="output">
+              <div
+                class="card-content light-blue lighten-3 indigo-text left-align"
+              >
+                <div class="card-title">Grams:</div>
+                <p id="grams">a</p>
+              </div>
+              <div
+                class="card-content light-blue lighten-3 indigo-text left-align"
+              >
+                <div class="card-title">Pounds</div>
+                <p id="pounds">b</p>
+              </div>
+              <div
+                class="card-content light-blue lighten-3 indigo-text left-align"
+              >
+                <div class="card-title">Ounces:</div>
+                <p id="ounces">c</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script/main.js"></script>
   </body>
 </html>
